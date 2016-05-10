@@ -1,0 +1,35 @@
+﻿@model IEnumerable<Dionysus.ViewModel.CocktailViewModel>
+
+@{
+    ViewBag.Title = "ShowCocktail";
+}
+
+<h2>ShowCocktail</h2>
+
+<table border="1">
+    <tr>
+        <th>Name</th>
+        <th>Glass</th>
+        <th>Skill</th>
+        <th>Ingredients</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.cocktail.Name</td>
+            <td>@item.cocktail.Glass</td>
+            <td>@item.cocktail.Skill</td>
+            <td>
+                @foreach (var ing in item.cocktail.Ingredients)
+                {
+                    @ing.Name
+                    @Html.Raw("&nbsp;")
+                    @ing.Weight
+                    @Html.Raw("&nbsp;")
+                    @ing.Unit
+                    <br />
+                }
+            </td>
+        </tr>
+    }
+</table>

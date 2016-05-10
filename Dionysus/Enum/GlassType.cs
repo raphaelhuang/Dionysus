@@ -13,5 +13,6 @@ namespace Dionysus.Enum
         Highball = 3,
         Champagne = 4,
         Collins = 5,
+        Shot = 6,
     }
 }

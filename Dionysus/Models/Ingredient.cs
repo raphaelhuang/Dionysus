@@ -11,7 +11,7 @@ namespace Dionysus.Models
         public int Id { get; set; }
         public string Name { get; set; }
         public IngredientCategory Category { get; set; }
-        public decimal Weight { get; set; }
+        public double Weight { get; set; }
         public UnitType Unit { get; set; }
     }
 }

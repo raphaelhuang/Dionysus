@@ -17,7 +17,7 @@ namespace Dionysus.Models
         public int Id { get; set; }
         public string Name { get; set; }
         public GlassType Glass { get; set; }
-        public CocktailCategory Category { get; set; }
+        public List<CocktailCategory> Category { get; set; }
         public SkillType Skill { get; set; }
         public KnownColor Colour { get; set; }
         public string Prep { get; set; }
