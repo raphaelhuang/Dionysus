@@ -4,10 +4,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace Dionysus.ViewModel
+namespace Dionysus.ViewModels
 {
     public class CocktailViewModel
     {
-        public Cocktail cocktail = new Cocktail();
+        public List<Cocktail> cocktailList = new List<Cocktail>();
     }
 }
